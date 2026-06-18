@@ -1,0 +1,23 @@
+user_id,role,department,privilege_level,last_login_days,last_review_days,dormant_flag,sod_conflict_flag,toxic_combination_code,toxic_combination_description
+STF-0412,DBA,IT,admin,187,94,true,false,,
+STF-0921,Payments Admin,Operations,privileged,142,102,true,false,,
+STF-1001,Branch Officer,Branch,standard,4,88,false,false,,
+STF-1847,Branch Manager,Branch,privileged,6,287,false,true,TOXIC-LI-LA,Loan Initiator + Loan Approver
+STF-2103,Payments Team,Operations,privileged,8,198,false,true,TOXIC-MK-AP,Payment Maker + Payment Approver
+STF-2500,Finance Officer,Finance,standard,6,112,false,false,,
+STF-3102,Relationship Manager,Commercial,standard,2,88,false,false,,
+STF-3341,Vendor Management,Operations,privileged,10,224,false,true,TOXIC-VC-VA,Vendor Create + Vendor Approve
+STF-4012,System Administrator,IT,admin,15,96,false,false,,
+STF-4200,Compliance Officer,Compliance,privileged,1,88,false,false,,
+STF-4482,HR Business Partner,HR,standard,7,92,false,false,,
+STF-5001,Wealth RM,Consumer,standard,3,85,false,false,,
+STF-5800,ATM Operations,Operations,privileged,12,102,false,false,,
+STF-6100,Teller,Branch,standard,1,91,false,false,,
+STF-6802,Network Engineer,IT,privileged,9,188,false,false,,
+STF-7041,Information Security,IT,admin,2,88,false,false,,
+STF-7900,Audit Team,Internal Audit,privileged,4,90,false,false,,
+STF-8102,Marketing,Marketing,standard,2,89,false,false,,
+STF-8800,Risk Analyst,Risk,privileged,3,94,false,false,,
+STF-9000,Legal,Legal,standard,5,92,false,false,,
+STF-9404,Payment Reconciliation,Operations,privileged,11,205,false,true,TOXIC-RC-RL,Recon Approval + Release
+STF-9801,Credit Analyst,Credit,standard,1,91,false,false,,

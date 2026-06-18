@@ -1,0 +1,15 @@
+{
+  "name": "sentinel-audit",
+  "version": "1.0.0",
+  "description": "Sentinel by Octave — Agentic AI Audit Intelligence Platform for banks",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "check": "cd frontend && npm run check",
+    "build:deploy": "cd frontend && npm install && npm run build && cd ../backend && npm install",
+    "start": "cd backend && node server.js",
+    "dev:backend": "cd backend && node server.js",
+    "dev:frontend": "cd frontend && npm run dev"
+  }
+}

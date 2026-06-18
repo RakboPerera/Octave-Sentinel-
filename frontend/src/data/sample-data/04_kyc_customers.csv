@@ -1,0 +1,52 @@
+customer_id,risk_rating,kyc_last_refresh_date,account_open_date,pep_flag,country_of_origin,entity_type,introducer_code,beneficial_owner_disclosed,dormant_flag,pep_relationship_type,occupation,monthly_txn_volume_lkr,source_of_funds
+BNK-CUST-PEP-001,high,2022-03-15,2018-06-01,true,LK,individual,INT-BR14-007,false,false,self,Politician,45000000,Declared income — political office
+BNK-CUST-PEP-002,high,2021-11-08,2019-02-14,true,LK,individual,INT-BR14-007,false,false,spouse,Homemaker,22000000,Spouse of PEP — declared family funds
+BNK-CUST-0841,high,2023-01-20,2020-09-10,false,PK,corporate,INT-BR14-007,false,false,,Import/Export,38000000,Trade proceeds — Pakistan
+BNK-CUST-3312,medium,2020-07-04,2017-03-22,false,LK,individual,INT-BR14-007,true,false,,Gem trader,18000000,Cash-intensive gem trade
+BNK-C-8834-G,high,2024-02-23,2019-11-01,false,AF,corporate,DIRECT,false,false,,Construction,52000000,Government contracts — high-risk jurisdiction
+BNK-CUST-0099,medium,2019-12-15,2016-08-14,false,LK,individual,INT-BR14-007,false,true,,Retired,800000,Pension income
+BNK-CUST-PEP-003,high,2024-06-10,2022-01-15,true,LK,individual,DIRECT,true,false,associate,Attorney,28000000,Legal practice income
+BNK-CUST-68115,medium,2025-08-31,2022-09-26,false,LK,individual,DIRECT,true,false,,Teacher,450000,Salary
+BNK-CUST-62184,low,2025-09-06,2024-06-28,false,LK,individual,DIRECT,true,false,,IT Professional,1200000,Salary
+BNK-CUST-53713,low,2026-02-26,2024-08-08,false,LK,individual,DIRECT,true,false,,Accountant,900000,Salary
+BNK-CUST-38305,low,2025-11-22,2018-08-06,false,LK,individual,DIRECT,true,false,,Farmer,350000,Agricultural income
+BNK-CUST-80807,low,2025-12-24,2023-09-18,false,LK,individual,DIRECT,true,false,,Engineer,1500000,Salary
+BNK-CUST-87182,low,2025-09-06,2022-07-03,false,LK,individual,DIRECT,true,false,,Shop owner,2200000,Retail business
+BNK-CUST-24896,high,2025-08-05,2019-04-10,false,LK,individual,DIRECT,true,false,,Real estate developer,35000000,Property sales
+BNK-CUST-39038,medium,2025-07-20,2019-07-10,false,LK,individual,DIRECT,true,true,,Retired,600000,Pension
+BNK-CUST-72781,medium,2026-02-21,2024-06-27,false,LK,corporate,INT-BR22-004,true,true,,Money exchange,8500000,Licensed money exchange
+BNK-CUST-52219,medium,2026-01-30,2024-04-07,false,LK,individual,DIRECT,true,false,,Doctor,3200000,Medical practice
+BNK-CUST-79541,low,2025-08-25,2018-06-22,false,LK,corporate,INT-BR17-020,true,false,,Logistics,6700000,Freight services
+BNK-CUST-38183,medium,2026-01-09,2018-12-27,false,LK,corporate,INT-BR29-008,true,false,,Hotel chain,14000000,Hospitality revenue
+BNK-CUST-64524,high,2025-07-19,2020-09-12,false,LK,individual,DIRECT,true,false,,Jeweller,42000000,Cash-intensive jewellery
+BNK-CUST-72163,low,2025-08-29,2023-06-17,false,LK,individual,DIRECT,true,true,,Student,150000,Family support
+BNK-CUST-27054,medium,2026-01-18,2020-12-28,false,LK,individual,DIRECT,true,false,,Contractor,5500000,Construction contracts
+BNK-CUST-97207,medium,2025-08-10,2021-03-16,false,LK,individual,DIRECT,true,false,,Pharmacist,2800000,Pharmacy business
+BNK-CUST-76507,low,2026-01-14,2018-09-09,false,LK,individual,DIRECT,true,false,,Driver,280000,Salary
+BNK-CUST-58176,low,2025-09-10,2018-12-07,false,LK,individual,INT-BR19-008,true,false,,Tea plantation worker,220000,Salary
+BNK-CUST-33647,low,2025-10-23,2024-11-05,false,LK,individual,DIRECT,true,false,,Civil servant,650000,Government salary
+BNK-CUST-84228,high,2025-12-06,2023-07-26,false,LK,corporate,DIRECT,true,false,,Fishery exporter,28000000,Fish exports
+BNK-CUST-65028,medium,2025-11-18,2020-12-14,false,LK,individual,DIRECT,true,false,,Mechanic,420000,Workshop income
+BNK-CUST-30392,low,2026-01-24,2024-07-31,false,LK,individual,DIRECT,true,true,,Clerk,380000,Salary
+BNK-CUST-89570,medium,2025-08-03,2019-09-22,false,LK,corporate,DIRECT,true,false,,Textile manufacturer,18000000,Manufacturing revenue
+BNK-CUST-47125,high,2025-07-31,2023-12-05,false,LK,corporate,DIRECT,true,false,,Fuel distributor,65000000,Cash-intensive fuel sales
+BNK-CUST-17180,low,2025-08-18,2018-06-14,false,LK,individual,DIRECT,true,false,,Electrician,350000,Self-employed
+BNK-CUST-25726,low,2025-10-11,2021-06-29,false,LK,corporate,DIRECT,true,false,,Software company,8200000,IT services
+BNK-CUST-40161,medium,2025-08-26,2019-03-14,false,LK,individual,DIRECT,true,true,,Retired military,900000,Pension
+BNK-CUST-20205,low,2026-02-27,2020-01-06,false,LK,corporate,INT-BR19-013,true,false,,Rice mill,4500000,Agricultural processing
+BNK-CUST-12733,low,2026-01-09,2020-08-17,false,LK,individual,INT-BR26-020,true,false,,Garment worker,280000,Salary
+BNK-CUST-23875,low,2026-01-22,2020-04-10,false,LK,corporate,DIRECT,true,true,,Printing press,3200000,Commercial printing
+BNK-CUST-39041,low,2025-10-01,2021-05-13,false,LK,individual,DIRECT,true,false,,Carpenter,320000,Self-employed
+BNK-CUST-94599,low,2025-09-11,2021-03-26,false,LK,individual,DIRECT,true,false,,Nurse,550000,Salary
+BNK-CUST-30036,high,2025-12-10,2018-06-01,false,LK,individual,INT-BR06-016,true,true,,Casino operator,78000000,Cash-intensive gaming
+BNK-CUST-51436,low,2025-09-24,2018-02-19,false,LK,corporate,INT-BR03-016,true,false,,Transport company,7500000,Transport services
+BNK-CUST-17362,low,2025-10-19,2018-07-16,false,LK,individual,INT-BR10-015,true,false,,Baker,450000,Bakery business
+BNK-CUST-47627,low,2026-02-07,2021-01-13,false,LK,individual,INT-BR20-020,true,true,,Welder,300000,Self-employed
+BNK-CUST-84928,high,2026-02-15,2020-02-16,false,LK,individual,INT-BR11-020,true,false,,Property dealer,55000000,Cash-intensive property
+BNK-CUST-23566,low,2026-02-05,2020-02-13,false,LK,individual,DIRECT,true,false,,Librarian,420000,Salary
+BNK-CUST-78690,medium,2025-07-27,2020-03-30,false,LK,individual,DIRECT,true,true,,Retired banker,1200000,Pension + investments
+BNK-CUST-98984,medium,2025-08-11,2021-05-18,false,LK,individual,DIRECT,true,false,,Restaurant owner,6800000,Cash-intensive dining
+BNK-CUST-98916,medium,2026-01-19,2018-11-30,false,LK,individual,DIRECT,true,false,,Plumber,380000,Self-employed
+BNK-CUST-96980,low,2026-01-26,2018-08-21,false,LK,individual,DIRECT,true,false,,Factory worker,310000,Salary
+BNK-CUST-59372,high,2025-10-01,2018-11-26,false,LK,individual,DIRECT,true,true,,Gold dealer,92000000,Cash-intensive bullion
+BNK-CUST-12389,low,2025-06-21,2021-02-10,false,LK,individual,DIRECT,true,true,,Farmer,280000,Agricultural income

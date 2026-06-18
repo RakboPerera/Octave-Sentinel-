@@ -1,0 +1,26 @@
+entry_id,gl_account,gl_name,amount_lkr,debit_credit,entry_date,entry_time,maker_id,approver_id,description,cost_centre,period,document_ref,is_reversal,reversal_of,authorisation_level,is_automated
+MJE-2026-4201,SUS-001,CEFT Receivables Suspense,185000000,Dr,2026-03-14,23:47:00,STF-1847,STF-1847,Manual debit to suspense — no supporting invoice,BR-14,2026-03,,false,,senior,false
+MJE-TEST-002,SUS-044,Fee Suspense BR-14,9450000,Cr,2026-03-21,23:10:00,STF-1847,STF-1847,Fee suspense adjustment — external credit,BR-14,2026-03,,true,MJE-2025-3981,standard,false
+MJE-TEST-003,3200,Provision for Loan Losses,45000000,Cr,2026-02-10,23:58:00,STF-2341,STF-3102,Monthly provision charge,HEAD,2026-02,PROV-2026-002,false,,director,false
+MJE-TEST-004,1200,Loans Receivable,120000000,Dr,2026-02-28,00:15:00,STF-4401,STF-4401,Month-end loan balance adjustment,BR-14,2026-02,,false,,director,false
+MJE-TEST-005,4200,Fee Income,850000,Cr,2026-03-05,09:15:00,STF-1109,STF-3201,Fee recognition from SUS-017 account,BR-05,2026-03,FEE-2026-0305,false,,standard,false
+MJE-TEST-006,1100,Cash and Equivalents,2800000,Dr,2026-03-08,10:45:00,STF-3891,STF-4120,FX settlement cash entry,TREASURY,2026-03,FX-2026-0308,false,,senior,false
+MJE-TEST-007,2400,Accrued Expenses,89450,Cr,2026-03-10,14:30:00,STF-2201,STF-3310,March staff cost accrual,HEAD,2026-03,ACR-2026-0310,false,,standard,false
+MJE-TEST-008,5200,IT Infrastructure Expense,3200000,Dr,2026-03-12,16:00:00,STF-2801,STF-3410,Data centre hosting fee Q1,IT,2026-03,INV-DC-2026-001,false,,standard,false
+MJE-TEST-009,3100,Interest Income Accrual,7800000,Cr,2026-03-31,17:45:00,STF-2101,STF-2102,March interest income accrual,HEAD,2026-03,INT-ACC-2026-03,false,,standard,false
+MJE-TEST-010,SUS-001,CEFT Receivables Suspense,24100000,Cr,2026-03-15,00:15:00,STF-1109,STF-3201,Overnight CEFT batch credit,BR-05,2026-03,CEFT-BATCH-0315,false,,standard,false
+MJE-TEST-011,IC-BNK-FINANCE,Intercompany — BNK Finance,45000000,Dr,2026-03-20,22:30:00,STF-1847,STF-1847,Intercompany offset against suspense,BR-14,2026-03,,false,,senior,false
+MJE-TEST-012,SUS-001,CEFT Receivables Suspense,45000000,Cr,2026-03-20,22:31:00,STF-1847,STF-1847,Suspense offset via intercompany receivable,BR-14,2026-03,,false,,senior,false
+MJE-2026-4205,1200,Loans Receivable,185000000,Dr,2026-03-28,00:03:00,STF-1847,STF-1847,Quarter-end loan book adjustment,BR-14,2026-03,,false,,director,false
+MJE-TEST-014,1200,Loans Receivable,185000000,Cr,2026-04-01,08:05:00,STF-1847,STF-1847,Reversal of Q1 loan book adjustment,BR-14,2026-04,,true,MJE-2026-4205,director,false
+MJE-TEST-015,4100-PROV,Provision — P&L Charge,42500000,Cr,2026-03-31,23:55:00,STF-2210,STF-2210,Quarter-end provision reversal,HEAD,2026-03,,true,,director,false
+MJE-TEST-016,4100-PROV,Provision — P&L Charge,42500000,Dr,2026-04-01,08:10:00,STF-2210,STF-2210,Repost of provision Q1,HEAD,2026-04,,false,,director,false
+MJE-TEST-017,IC-BNK-INSURANCE,Intercompany — BNK Insurance,28000000,Dr,2026-03-25,21:40:00,STF-1847,STF-1847,Intercompany loan book support,BR-14,2026-03,,false,,senior,false
+MJE-TEST-018,1200,Loans Receivable,28000000,Cr,2026-03-25,21:41:00,STF-1847,STF-1847,Loan balance supported by IC claim,BR-14,2026-03,,false,,senior,false
+MJE-TEST-019,3300-INT-INCOME,Interest Income,14200000,Cr,2026-02-28,23:58:00,STF-0441,STF-0441,Month-end interest income adjustment,HEAD,2026-02,,true,,senior,false
+MJE-TEST-020,2100,Customer Deposits,5600000,Dr,2026-03-07,11:20:00,STF-3500,STF-3601,Deposit reclassification,BR-22,2026-03,DEP-RECLASS-007,false,,standard,false
+MJE-TEST-021,4200,Fee Income,1200000,Cr,2026-03-14,15:40:00,STF-2201,STF-3310,March fee income accrual,HEAD,2026-03,FEE-ACC-MAR,false,,standard,false
+MJE-TEST-022,5100,Staff Costs,980000,Dr,2026-03-28,10:00:00,STF-2201,STF-3310,Salary accrual adjustment,HEAD,2026-03,HR-SAL-MAR,false,,standard,true
+MJE-TEST-023,2400,Accrued Expenses,450000,Cr,2026-03-15,09:30:00,STF-3310,STF-2201,Utility expense accrual,BR-11,2026-03,UTIL-MAR-001,false,,standard,false
+MJE-TEST-024,3200,Provision for Loan Losses,8900000,Cr,2026-03-31,18:20:00,STF-2341,STF-3102,Additional ECL overlay — construction sector,HEAD,2026-03,ECL-OVERLAY-Q1,false,,director,false
+MJE-TEST-025,1100,Cash and Equivalents,15000000,Dr,2026-03-29,16:45:00,STF-3891,STF-4120,NOSTRO reconciliation clearing,TREASURY,2026-03,NOS-CLEAR-029,false,,senior,false

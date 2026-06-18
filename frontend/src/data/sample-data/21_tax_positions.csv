@@ -1,0 +1,11 @@
+position_id,tax_type,amount_lkr,expected_amount_lkr,variance_pct,temp_perm_diff,valuation_allowance,aging_days,reconciled_flag,period
+TAX-001,Income Tax,3400000000,3420000000,-0.6,temp,0,14,true,2025-Q4
+TAX-002,Deferred Tax Asset,1200000000,1350000000,-11.1,temp,0,31,false,2025-Q4
+TAX-003,VAT,820000000,815000000,0.6,perm,0,8,true,2025-Q4
+TAX-004,WHT,145000000,152000000,-4.6,perm,0,22,false,2025-Q4
+TAX-005,Income Tax (LCB Surcharge),410000000,398000000,3.0,perm,0,18,true,2025-Q4
+TAX-006,Deferred Tax Liability,-680000000,-610000000,11.5,temp,0,44,false,2025-Q4
+TAX-007,VAT Input Credit,220000000,218000000,0.9,perm,0,12,true,2025-Q4
+TAX-008,FBT,18000000,17500000,2.9,perm,0,20,true,2025-Q4
+TAX-009,Stamp Duty,62000000,61500000,0.8,perm,0,11,true,2025-Q4
+TAX-010,Income Tax (Prior Year),320000000,295000000,8.5,perm,45000000,90,false,2024-Q4

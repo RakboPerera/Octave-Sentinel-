@@ -1,0 +1,11 @@
+customer_id,list_source,match_score,match_type,match_target_name,review_status,days_open,pep_flag,recommended_action
+CUST-10041,OFAC,0.94,exact,listed_individual_042,open,8,false,Freeze and file STR
+CUST-12205,UN,0.88,phonetic,listed_entity_018,in_review,4,true,Enhanced EDD and legal review
+CUST-13871,EU,0.85,partial,listed_individual_201,open,12,false,Manual review by CCO
+CUST-14502,OFAC,0.91,phonetic,listed_individual_077,in_review,2,false,Manual review
+CUST-15604,UN,0.82,fuzzy,listed_entity_104,open,22,false,False-positive assessment
+CUST-16801,OFAC,0.96,exact,listed_individual_112,escalated,14,true,Freeze pending CBSL FIU direction
+CUST-17200,EU,0.80,fuzzy,listed_individual_220,closed,0,false,False-positive confirmed
+CUST-18044,OFAC,0.89,phonetic,listed_entity_055,open,6,false,Manual review
+CUST-19105,UN,0.83,partial,listed_individual_188,in_review,9,false,Manual review
+CUST-20011,OFAC,0.87,fuzzy,listed_individual_301,open,18,true,PEP + sanction hit — escalate immediately

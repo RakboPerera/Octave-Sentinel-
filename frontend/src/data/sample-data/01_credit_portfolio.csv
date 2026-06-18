@@ -1,0 +1,51 @@
+loan_id,exposure_lkr,assigned_stage,dpd_days,collateral_ratio,restructure_count,sector,branch_code,override_flag,origination_quarter,customer_risk_rating
+BNK-CR-2026-0441,18500000,1,67,0.38,2,Construction,BR-14,true,Q3-2025,medium
+BNK-CR-2026-0872,12200000,1,88,0.52,1,Agriculture,BR-14,true,Q4-2025,high
+BNK-CR-2026-1203,25000000,2,45,0.41,1,Construction,BR-14,false,Q3-2025,medium
+BNK-CR-2026-1847,8700000,1,71,0.35,2,Agriculture,BR-23,true,Q4-2025,high
+BNK-CR-2026-2211,31000000,2,55,0.43,1,Construction,BR-07,false,Q4-2025,medium
+BNK-CR-2026-0099,14500000,1,92,0.28,3,Manufacturing,BR-14,true,Q2-2025,high
+BNK-CR-2026-8238,18434414,1,0,0.73,0,Manufacturing,BR-05,false,Q1-2025,high
+BNK-CR-2026-3712,8287781,2,35,1.16,0,Manufacturing,BR-08,false,Q1-2025,high
+BNK-CR-2026-4628,41544950,2,30,1.16,0,Tourism & Hospitality,BR-26,false,Q1-2025,low
+BNK-CR-2026-8719,16449461,1,18,1.07,0,Transport,BR-04,false,Q1-2025,medium
+BNK-CR-2026-3792,19751694,2,12,1.63,1,Construction,BR-24,false,Q4-2025,high
+BNK-CR-2026-4022,44187302,1,18,0.79,0,Retail,BR-29,false,Q3-2025,high
+BNK-CR-2026-4575,21420497,1,0,0.75,0,Agriculture,BR-28,false,Q2-2025,low
+BNK-CR-2026-6113,12915531,1,5,1.2,0,Transport,BR-12,false,Q2-2025,medium
+BNK-CR-2026-8749,37845520,1,0,1.37,0,Manufacturing,BR-06,false,Q4-2025,medium
+BNK-CR-2026-5211,5753932,2,30,0.94,0,Manufacturing,BR-27,false,Q1-2025,medium
+BNK-CR-2026-6286,23117675,2,5,0.77,1,Manufacturing,BR-21,false,Q4-2025,medium
+BNK-CR-2026-8266,18550891,1,22,0.86,0,IT & Tech,BR-18,false,Q3-2025,high
+BNK-CR-2026-6509,11283286,2,35,1.14,0,IT & Tech,BR-16,false,Q1-2025,low
+BNK-CR-2026-3898,42024332,1,0,1.39,0,Agriculture,BR-13,false,Q4-2025,high
+BNK-CR-2026-6834,2770478,2,30,0.98,1,Agriculture,BR-22,false,Q3-2025,medium
+BNK-CR-2026-3913,2217789,1,5,1.18,0,Tourism & Hospitality,BR-17,false,Q2-2025,high
+BNK-CR-2026-3871,42867299,2,5,1.63,1,Manufacturing,BR-05,false,Q3-2025,low
+BNK-CR-2026-7418,23753744,2,30,1.71,1,Healthcare,BR-01,false,Q1-2025,medium
+BNK-CR-2026-9813,40074679,1,5,0.96,0,Agriculture,BR-03,false,Q4-2025,low
+BNK-CR-2026-9230,46275128,2,30,1.54,0,Healthcare,BR-18,false,Q2-2025,medium
+BNK-CR-2026-7322,38191547,2,35,1.17,0,Manufacturing,BR-23,false,Q3-2025,medium
+BNK-CR-2026-8502,32298722,2,12,1.18,1,Agriculture,BR-08,false,Q2-2025,low
+BNK-CR-2026-5769,41489547,1,0,1.35,0,Manufacturing,BR-01,false,Q1-2025,low
+BNK-CR-2026-4875,6755156,1,0,1.7,0,IT & Tech,BR-08,false,Q3-2025,medium
+BNK-CR-2026-4755,40668909,2,30,0.85,1,Healthcare,BR-08,false,Q4-2025,medium
+BNK-CR-2026-4559,25776507,1,0,0.81,0,Financial Services,BR-14,false,Q4-2025,low
+BNK-CR-2026-8516,9332920,1,0,0.77,0,Manufacturing,BR-07,false,Q2-2025,high
+BNK-CR-2026-6675,33046444,1,0,1.16,0,Manufacturing,BR-28,false,Q1-2025,medium
+BNK-CR-2026-9619,2990382,2,30,0.81,1,Agriculture,BR-30,false,Q2-2025,low
+BNK-CR-2026-6329,5934955,1,22,1.23,0,Trade & Commerce,BR-13,false,Q1-2025,medium
+BNK-CR-2026-5172,46417431,2,22,1.01,1,Healthcare,BR-05,false,Q2-2025,medium
+BNK-CR-2026-4783,6090793,2,0,1.34,1,Transport,BR-02,false,Q1-2025,high
+BNK-CR-2026-6905,12565131,2,30,1.71,1,Construction,BR-17,false,Q1-2025,low
+BNK-CR-2026-3561,29096918,2,35,0.77,0,Agriculture,BR-29,false,Q2-2025,high
+BNK-CR-2026-7870,46115566,1,0,1.38,0,Retail,BR-19,false,Q3-2025,medium
+BNK-CR-2026-4673,10783092,1,12,0.96,0,Tourism & Hospitality,BR-15,false,Q3-2025,low
+BNK-CR-2026-3076,8709628,2,22,1.38,1,Agriculture,BR-18,false,Q2-2025,high
+BNK-CR-2026-4085,26798543,1,12,1.67,0,Tourism & Hospitality,BR-06,false,Q4-2025,high
+BNK-CR-2026-8763,2524999,2,5,1.37,1,IT & Tech,BR-10,false,Q1-2025,low
+BNK-CR-2026-5166,12431932,2,0,1.68,1,Tourism & Hospitality,BR-10,false,Q2-2025,medium
+BNK-CR-2026-4667,5409056,1,5,1.26,0,Agriculture,BR-21,false,Q4-2025,medium
+BNK-CR-2026-3361,44755954,1,0,1.07,0,Tourism & Hospitality,BR-06,false,Q4-2025,high
+BNK-CR-2026-8780,7049529,1,18,1.32,0,Trade & Commerce,BR-18,false,Q1-2025,medium
+BNK-CR-2026-7771,4807087,2,30,0.86,0,Tourism & Hospitality,BR-12,false,Q1-2025,medium

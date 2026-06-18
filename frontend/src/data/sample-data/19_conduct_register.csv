@@ -1,0 +1,16 @@
+case_id,subject_role,category,severity,opened_date,resolution_status,closed_date,days_open,recurrence_count,whistleblower_flag,branch_code
+CD-00101,STF-1847,behaviour,medium,2024-08-12,closed,2024-09-04,23,1,false,BR-14
+CD-00245,STF-1847,process-breach,high,2025-04-18,closed,2025-05-22,34,2,false,BR-14
+CD-00412,STF-2103,behaviour,high,2025-06-12,open,,182,1,false,BR-02
+CD-00487,STF-1847,process-breach,high,2025-11-03,open,,61,3,false,BR-14
+CD-00501,STF-3341,process-breach,medium,2025-03-21,closed,2025-04-15,25,1,false,HO
+CD-00512,STF-3341,process-breach,medium,2025-09-11,open,,88,2,false,HO
+CD-00521,STF-4482,grievance,medium,2025-09-02,open,,98,1,false,BR-22
+CD-00602,ANON,financial-misconduct,high,2025-09-05,open,,95,1,true,BR-14
+CD-00604,ANON,governance,high,2025-09-12,open,,88,1,true,BR-14
+CD-00611,ANON,financial-misconduct,high,2025-09-18,open,,82,1,true,BR-14
+CD-00620,ANON,governance,medium,2025-09-28,open,,72,1,true,BR-14
+CD-00702,STF-5800,behaviour,low,2025-01-05,closed,2025-01-20,15,1,false,HO
+CD-00810,STF-6802,process-breach,medium,2025-03-10,closed,2025-04-05,26,1,false,HO
+CD-00901,STF-2103,behaviour,high,2025-08-14,closed,2025-09-10,27,2,false,BR-02
+CD-01005,STF-9404,process-breach,medium,2025-05-22,closed,2025-06-18,27,1,false,HO

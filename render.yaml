@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: sentinel-audit
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm run build:deploy
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    healthCheckPath: /api/health

@@ -1,0 +1,25 @@
+return_name,line_item,submitted_value,unit,reporting_period,submission_date
+Form CAR,Tier 1 CAR,19.06,pct,Q4 2025,2026-01-30
+Form CAR,Total CAR,20.22,pct,Q4 2025,2026-01-30
+Form CAR,Tier 1 capital LKR Bn,222.60,lkr_bn,Q4 2025,2026-01-30
+Form CAR,Tier 2 capital LKR Bn,44.24,lkr_bn,Q4 2025,2026-01-30
+Form CAR,Leverage ratio,12.14,pct,Q4 2025,2026-01-30
+LCR Return,All-currency LCR,203.8,pct,Q4 2025,2026-01-25
+LCR Return,HQLA Level 1 LKR Bn,141.07,lkr_bn,Q4 2025,2026-01-25
+LCR Return,Net cash outflows 30d LKR Bn,81.6,lkr_bn,Q4 2025,2026-01-25
+NSFR Return,NSFR,138.3,pct,Q4 2025,2026-01-28
+NSFR Return,Available stable funding LKR Bn,691.5,lkr_bn,Q4 2025,2026-01-28
+NSFR Return,Required stable funding LKR Bn,500.0,lkr_bn,Q4 2025,2026-01-28
+Stage 3 / NPL,Network Stage 3 ratio,0.91,pct,Q4 2025,2026-01-31
+Stage 3 / NPL,Stage 3 exposure LKR Bn,3.92,lkr_bn,Q4 2025,2026-01-31
+Stage 3 / NPL,Total gross loans LKR Bn,430.4,lkr_bn,Q4 2025,2026-01-31
+Large Exposures,BNK-CORP-0887 aggregate %,22.8,pct,Q4 2025,2026-01-31
+Large Exposures,BNK-CORP-0887 aggregate LKR Bn,22.1,lkr_bn,Q4 2025,2026-01-31
+Large Exposures,BNK-CORP-2341 aggregate %,8.4,pct,Q4 2025,2026-01-31
+Large Exposures,BNK-CORP-4412 aggregate %,6.2,pct,Q4 2025,2026-01-31
+KYC/AML Return,Pending STR assessments,4,count,Feb 2026,2026-03-05
+KYC/AML Return,PEP EDD overdue,12,count,Feb 2026,2026-03-05
+KYC/AML Return,KYC gap rate,4.7,pct,Feb 2026,2026-03-05
+STR Pipeline (FIU),Filings completed last 30d,9,count,Mar 2026,2026-04-03
+STR Pipeline (FIU),Avg lag from flag to filing,11,days,Mar 2026,2026-04-03
+STR Pipeline (FIU),Filings beyond 10-day lag,3,count,Mar 2026,2026-04-03

@@ -1,0 +1,274 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* ── Octave Brand Fonts ── */
+  --font-display: 'Josefin Sans', 'Futura', system-ui, sans-serif;
+  --font: 'Lato', system-ui, -apple-system, sans-serif;
+
+  /* ── Octave Brand Colours ── */
+  --octave-turquoise: #26EA9F;
+  --octave-turquoise-dark: #0BBF7A;
+  --octave-turquoise-light: #E8FDF4;
+  --octave-pink: #C41E3A;
+  --octave-pink-light: #FCEEF1;
+
+  /* ── Surface System: white main, dark panels ── */
+  --color-bg: #F8F8F7;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F3F3F1;
+  --color-panel: #111110;
+  --color-panel-2: #1C1C1A;
+  --color-panel-border: rgba(255,255,255,0.10);
+
+  /* ── Borders ── */
+  --color-border: rgba(0,0,0,0.11);
+  --color-border-strong: rgba(0,0,0,0.18);
+
+  /* ── Text ── */
+  --color-text: #111110;
+  --color-text-2: #5A5955;
+  /* UI review fix: darkened from #9A9893 (~2.7:1, failed WCAG AA) to #6E6C66
+     (~5.3:1) so the pervasive muted captions/eyebrows are legible. Still a
+     clear third tier below --color-text-2. */
+  --color-text-3: #6E6C66;
+
+  /* ── Accent: Octave Turquoise replaces amber/blue CTA ── */
+  --color-accent: #26EA9F;
+  --color-accent-dark: #0BBF7A;
+  --color-accent-light: #E8FDF4;
+
+  /* ── Severity palette (single source of truth) ── */
+  --severity-critical: #C41E3A;
+  --severity-critical-bg: #FEF8F8;
+  --severity-critical-light: #FCEEF1;
+  --severity-high: #B45309;
+  --severity-high-bg: #FFFBF0;
+  --severity-high-light: #FEF3E2;
+  --severity-medium: #185FA5;
+  --severity-medium-bg: #F6FAFF;
+  --severity-medium-light: #E6F1FB;
+  --severity-low: #6B7280;
+  --severity-low-bg: #F9FAFB;
+  --severity-low-light: #F3F4F6;
+
+  /* ── Semantic colours (kept for agent/severity coding) ── */
+  --color-blue: #185FA5;
+  --color-blue-light: #E6F1FB;
+  --color-teal: #0F6E56;
+  --color-teal-light: #E1F5EE;
+  --color-amber: #B45309;
+  --color-amber-light: #FEF3E2;
+  --color-red: #C41E3A;
+  --color-red-light: #FCEEF1;
+  --color-green: #3B6D11;
+  --color-green-light: #EAF3DE;
+  --color-purple: #3D3C38;
+  --color-purple-light: #F0F0EE;
+  --color-coral: #993C1D;
+  --color-coral-light: #FAECE7;
+  --color-pink: #993556;
+  --color-pink-light: #FBEAF0;
+  --color-danger: #C41E3A;
+  --color-danger-light: #FCEBEB;
+  --color-gray: #5F5E5A;
+  --color-gray-light: #F1EFE8;
+
+  /* ── Layout ── */
+  --sidebar-w: 248px;
+  --header-h: 56px;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.03);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.04);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-glow: 0 0 20px rgba(38,234,159,0.08);
+
+  /* ── Transitions ── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+html, body, #root { height: 100%; width: 100%; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* ── Display / header type uses Josefin Sans (Avant Garde substitute) ── */
+h1, h2, h3, h4, .display { font-family: var(--font-display); }
+h1 { font-size: 28px; font-weight: 700; }
+h2 { font-size: 20px; font-weight: 700; }
+h3 { font-size: 16px; font-weight: 600; }
+h4 { font-size: 14px; font-weight: 600; }
+
+/* Intro dark mode */
+body.intro-mode { background: #0A0A0B; color: #e8e6e0; }
+
+/* ── Accessibility: visible keyboard focus on all interactive elements ──
+   UI review fix #9 — many controls are styled <button>/<div role=button>
+   with no focus ring, leaving keyboard users lost. */
+:focus-visible { outline: 2px solid var(--color-accent-dark); outline-offset: 2px; border-radius: 4px; }
+button:focus:not(:focus-visible), a:focus:not(:focus-visible) { outline: none; }
+
+/* ── Tabular figures everywhere numbers matter (consistency) ── */
+input[type=number], .num, table td, table th { font-variant-numeric: tabular-nums; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border-strong); border-radius: 10px; }
+
+/* ── Status chips (inline styled in components) ── */
+
+/* ── Animations ── */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideIn { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(16px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.97); } }
+@keyframes glow { 0%, 100% { box-shadow: 0 0 8px rgba(38,234,159,0.15); } 50% { box-shadow: 0 0 20px rgba(38,234,159,0.3); } }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+@keyframes widthGrow { from { width: 0; } to { width: var(--target-width, 100%); } }
+@keyframes countUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.animate-fade-in { animation: fadeIn 0.5s var(--ease-out) both; }
+.animate-slide-in { animation: slideIn 0.4s var(--ease-out) both; }
+.animate-slide-up { animation: slideUp 0.5s var(--ease-out) both; }
+.animate-scale-in { animation: scaleIn 0.35s var(--ease-out) both; }
+
+/* Staggered children animation */
+.stagger-children > * { animation: fadeInUp 0.4s var(--ease-out) both; }
+.stagger-children > *:nth-child(1) { animation-delay: 0s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.05s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.15s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.25s; }
+.stagger-children > *:nth-child(7) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(8) { animation-delay: 0.35s; }
+
+/* ── Loading ── */
+.spinner { width: 20px; height: 20px; border: 2px solid var(--color-border); border-top-color: var(--octave-turquoise); border-radius: 50%; animation: spin 0.8s linear infinite; }
+.skeleton { background: linear-gradient(90deg, var(--color-surface-2) 25%, var(--color-border) 50%, var(--color-surface-2) 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: var(--radius); }
+
+/* ── Buttons ── */
+button { font-family: var(--font); cursor: pointer; border: none; background: none; }
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: var(--radius); font-size: 13px; font-weight: 600; transition: all 0.18s ease; cursor: pointer; }
+.btn:active { transform: scale(0.97); }
+.btn-primary { background: var(--color-panel); color: white; }
+.btn-primary:hover { background: #2a2a28; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transform: translateY(-1px); }
+.btn-secondary { background: var(--color-surface); border: 1px solid var(--color-border-strong); color: var(--color-text); }
+.btn-secondary:hover { background: var(--color-surface-2); box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.btn-accent { background: var(--octave-turquoise); color: #111110; font-weight: 700; }
+.btn-accent:hover { background: var(--octave-turquoise-dark); box-shadow: 0 2px 10px rgba(38,234,159,0.3); transform: translateY(-1px); }
+.btn-danger { background: var(--color-red-light); color: var(--color-red); border: 1px solid rgba(163,45,45,0.2); }
+.btn-danger:hover { background: #F7C1C1; box-shadow: 0 1px 4px rgba(196,30,58,0.15); }
+.btn-sm { padding: 5px 10px; font-size: 12px; }
+
+/* ── Cards ── */
+.card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 20px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); transition: box-shadow 0.25s var(--ease-out), transform 0.25s var(--ease-out); }
+.card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
+.card-dark { background: var(--color-panel); border: 1px solid var(--color-panel-border); border-radius: var(--radius-lg); padding: 20px; color: rgba(255,255,255,0.9); }
+.card-glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.3); border-radius: var(--radius-lg); padding: 20px; }
+
+/* ── Badge ── */
+.badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+
+/* ── Table ── */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.data-table th { text-align: left; padding: 10px 14px; font-weight: 700; color: var(--color-text-2); border-bottom: 2px solid var(--color-border); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; font-family: var(--font-display); }
+.data-table td { padding: 12px 14px; border-bottom: 1px solid var(--color-border); vertical-align: top; transition: background 0.15s ease; }
+.data-table tr:hover td { background: rgba(0,0,0,0.025); }
+.data-table tr:last-child td { border-bottom: none; }
+
+/* ── Divider ── */
+.divider { height: 1px; background: var(--color-border); margin: 16px 0; }
+
+/* ── Modal ── */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 24px; animation: fadeIn 0.2s ease; }
+.modal { background: var(--color-surface); border-radius: var(--radius-xl); padding: 28px; max-width: 480px; width: 100%; box-shadow: 0 24px 64px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05); animation: slideUp 0.3s var(--ease-out); }
+
+/* ── Input ── */
+input[type="text"], input[type="password"], input[type="email"], select, textarea {
+  font-family: var(--font); font-size: 13px; color: var(--color-text); background: var(--color-surface);
+  border: 1px solid var(--color-border-strong); border-radius: var(--radius); padding: 8px 12px;
+  width: 100%; outline: none; transition: border-color 0.15s;
+}
+input:focus, select:focus, textarea:focus { border-color: var(--octave-turquoise); box-shadow: 0 0 0 3px rgba(38,234,159,0.25); }
+/* NOTE: the canonical global :focus-visible ring is defined once earlier (a11y
+   fix #9, accent-dark + border-radius). The duplicate that previously lived here
+   silently overrode it and dropped the radius — removed. */
+
+/* ── Dot indicators ── */
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.dot-green { background: var(--octave-turquoise); }
+.dot-amber { background: #8A8A85; }
+.dot-red { background: var(--color-red); }
+.dot-gray { background: var(--color-text-3); }
+.dot-pulse { animation: pulse 2s ease-in-out infinite; }
+
+/* ── COLOR ROLES (codified from the visual review) ──────────────────────────
+   gold  (#B45309 / #F5B841) → primary action & "attention / modified / staged"
+   teal  (#0BBF7A / #26EA9F) → live data, success, positive, brand mark
+   dark  (#111110)           → neutral chrome (sidebar, header, neutral buttons)
+   severity palette          → the single source of truth for risk encoding
+   Don't introduce new ad-hoc CTA colors — reach for these roles. */
+
+/* ── Tabular figures: align numerals in stats, queues, and tables ── */
+.num, .tabular-nums { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+
+/* ── Text utilities ── */
+.line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.line-clamp-4 { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* ── Smooth expand/collapse ── */
+.finding-expand-enter { max-height: 0; opacity: 0; overflow: hidden; transition: max-height 0.3s ease, opacity 0.25s ease; }
+.finding-expand-active { max-height: 2000px; opacity: 1; }
+
+/* ── Section divider: colored accent line between content blocks ── */
+.section-accent { position: relative; padding-top: 20px; margin-top: 8px; }
+.section-accent::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--accent-color, var(--color-border-strong)) 0%, transparent 100%); border-radius: 1px; opacity: 0.5; }
+
+/* ── Alternating section background ── */
+.section-alt { background: var(--color-surface-2); border-radius: var(--radius-lg); padding: 20px; margin: -4px -4px; }
+
+/* ── Filter pill bar ── */
+.filter-bar { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; padding: 8px 0; }
+.filter-pill { display: inline-flex; align-items: center; gap: 4px; padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; cursor: pointer; border: 1px solid var(--color-border-strong); background: var(--color-surface); color: var(--color-text-2); transition: all 0.15s ease; font-family: var(--font); }
+.filter-pill:hover { background: var(--color-surface-2); color: var(--color-text); border-color: var(--color-text-3); }
+.filter-pill.active { background: var(--color-panel); color: white; border-color: var(--color-panel); }
+.filter-pill.active:hover { background: #2a2a28; }
+.filter-pill .count { font-size: 10px; font-weight: 700; padding: 1px 5px; border-radius: 8px; background: rgba(0,0,0,0.08); min-width: 18px; text-align: center; }
+.filter-pill.active .count { background: rgba(255,255,255,0.2); }
+.filter-pill-danger.active { background: var(--severity-critical); border-color: var(--severity-critical); }
+.filter-pill-warn.active { background: var(--severity-high); border-color: var(--severity-high); }
+.filter-pill-clear { color: var(--color-text-3); font-weight: 500; border: 1px dashed var(--color-border); background: transparent; }
+.filter-pill-clear:hover { color: var(--severity-critical); border-color: var(--severity-critical); background: var(--severity-critical-bg); }
+
+/* ── Responsive breakpoints ── */
+@media (max-width: 1440px) {
+  .page-content { padding: 24px 24px; }
+  .agent-grid { grid-template-columns: 340px 1fr; }
+}
+@media (max-width: 1280px) {
+  :root { --sidebar-w: 220px; }
+  .page-content { padding: 20px 20px; }
+  .agent-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 1024px) {
+  :root { --sidebar-w: 200px; }
+  .page-content { padding: 16px 16px; }
+}

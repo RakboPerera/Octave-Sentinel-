@@ -18,13 +18,16 @@ const PORT = process.env.PORT || 8000;
 // rate-limit bucket. trust proxy = 1 honours the first X-Forwarded-For hop.
 app.set('trust proxy', 1);
 
-// FIX L5: Whitelist known origins instead of allowing all. In production
-// FRONTEND_URL env var should be set to the deployed frontend address.
+// FIX L5: Whitelist known origins instead of allowing all. In production the
+// frontend is served by THIS backend (single service), so its own public URL
+// must be allowed. Render injects RENDER_EXTERNAL_URL automatically (zero config);
+// FRONTEND_URL can also be set explicitly for other hosts / a split deployment.
 const ALLOWED_ORIGINS = [
   'http://localhost:3000',
   'http://localhost:5173',
   'http://localhost:4173',
   ...(process.env.FRONTEND_URL ? [process.env.FRONTEND_URL] : []),
+  ...(process.env.RENDER_EXTERNAL_URL ? [process.env.RENDER_EXTERNAL_URL] : []),
 ];
 
 app.use(cors({
